@@ -1,0 +1,42 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Code+Pro:wght@300&display=swap");
+
+html,
+body,
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 62.5%;
+  font-family: "Source Code Pro", monospace;
+}
+:root {
+  --h1: 7.594rem;
+  --h2: 5.063rem;
+  --h3: 3.375rem;
+  --h4: 2.25rem;
+  --h5: 1.5rem;
+  --primary-blue: #1b263b;
+}
+h1 {
+  font-size: var(--h1);
+}
+h2 {
+  font-size: var(--h2);
+}
+h3 {
+  font-size: var(--h3);
+}
+h4 {
+  font-size: var(--h4);
+}
+h5 {
+  font-size: var(--h5);
+}
+router-view {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  width: 60vw;
+  z-index: -1;
+}
