@@ -40,3 +40,20 @@ router-view {
   width: 60vw;
   z-index: -1;
 }
+.pageSelector {
+  background-color: transparent;
+  border: none;
+  font-size: var(--h2);
+  color: white;
+  cursor: pointer;
+}
+.content {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 60vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

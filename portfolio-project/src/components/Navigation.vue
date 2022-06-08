@@ -3,9 +3,10 @@
 <h1>
     Thomas Anderson
 </h1>
-<router-link to="/">Home</router-link>
-<router-link to="/home">Home</router-link>
-<router-link to="/home">Home</router-link>
+<button class="pageSelector" value="Home" @click="changeView('Home')">Home</button>
+<button class="pageSelector" value="Education" @click="changeView('Education')">Education</button>
+<button class="pageSelector" value="Skills" @click="changeView('Skills')">Skills</button>
+<button class="pageSelector" value="Extracurriculars" @click="changeView('Extracurriculars')">Extracurriculars</button>
 </div>   
 </template>
 <style scoped>
@@ -36,13 +37,13 @@ router-link{
 }
 </style>
 <script>
-import { useRouter, useRoute } from 'vue-router'
-
 export default {
-  setup() {
-    const router = useRouter()
-    const route = useRoute()
-    return {router, route, }
-  },
+  props: ['view',],
+  methods: {
+    changeView(value){
+      this.$props.view = value
+    }
+  }
 }
+
 </script>
