@@ -13,6 +13,7 @@
 import navbar from './components/navbar.vue'
 import closedNavbar from './components/closedNavbar.vue'
 export default { components: {navbar, closedNavbar}}
+document.title = "Thomas Anderson Portfolio"
 </script>
 <style>
 @import url('./assets/base.css');

@@ -214,6 +214,9 @@ body,
 .closedNavbar{
   display:inline;
 }
+.pageSelector{
+  padding: 2rem;
+}
 .content{
   z-index: -1;
   margin-top: 15rem;
