@@ -32,6 +32,25 @@ h4 {
 h5 {
   font-size: var(--h5);
 }
+.navbar{
+  background-color:var(--primary-blue);
+  width: 40vw; 
+  height: 100vh;
+  position: absolute;
+  left: 0;
+  top: 0;
+
+}
+.navContent{
+   display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+  font-family: 'Source Code Pro', monospace;   
+  color: white;
+  padding-right: 3rem;
+  height: 100vh;
+}
 router-view {
   position: absolute;
   right: 0;
@@ -126,4 +145,51 @@ router-view {
 }
 @keyframes translateUp {
   100% { opacity: 0%; display: none;}
+}
+@media only screen and (max-width: 930px) {
+  .navbar{
+    width: 100%; 
+    height: 25vh;
+  }
+  .navContent{
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding-top: 5vh;
+    height: 25vh;
+    overflow-y: auto;
+  }
+  .pageSelector{
+    margin-right: 3vw;
+  }
+  .content{
+    width: 100%;
+    height: 75vh;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-top: 25vh;
+    overflow-y: auto;
+  }
+  .home{
+    padding-left: 0rem;
+  }
+  .listItem{
+    max-width: 60vw;
+  }
+html,
+body,
+* {
+  font-size: 60%;
+}
+}
+@media only screen and (max-width: 650px) {
+  html,
+body,
+* {
+  font-size: 45%;
+  font-weight: bolder;
+}
+.pageSelector{
+  margin-right: 7vw;
+}
 }
