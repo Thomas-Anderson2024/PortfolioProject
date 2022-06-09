@@ -106,6 +106,10 @@ router-view {
 .pageSelector:hover::before {
   transform: scaleX(1);
 }
+.subtleHint{
+  color: white;
+  opacity: 40%;
+}
 .content {
   position: absolute;
   right: 0;
@@ -156,6 +160,11 @@ router-view {
   animation-duration: 1.5s;
   animation-fill-mode: forwards;
   animation-direction: reverse;  
+}
+.alwaysonscreenholder{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 @keyframes translateUp {
   100% { opacity: 0%; display: none;}

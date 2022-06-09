@@ -9,7 +9,8 @@
   },
   "dependencies": {
     "vue": "^3.2.25",
-    "vue-router": "^4.0.15"
+    "vue-router": "^4.0.15",
+    "vue-typeout-text": "^0.1.0"
   },
   "devDependencies": {
     "@vitejs/plugin-vue": "^2.3.3",
