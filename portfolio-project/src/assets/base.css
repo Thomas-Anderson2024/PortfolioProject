@@ -11,7 +11,7 @@ body,
 }
 :root {
   --h1: 7.094rem;
-  --h2: 5.063rem;
+  --h2: 4.063rem;
   --h3: 3.375rem;
   --h4: 2.25rem;
   --h5: 1.5rem;
@@ -32,18 +32,17 @@ h4 {
 h5 {
   font-size: var(--h5);
 }
-.navbar{
-  background-color:var(--primary-blue);
-  width: 40vw; 
+.navbar {
+  background-color: var(--primary-blue);
+  width: 40vw;
   height: 100vh;
   position: absolute;
   left: 0;
   top: 0;
-
 }
-.closedNavbar{
+.closedNavbar {
   background-color: var(--primary-blue);
-  width: 100vw; 
+  width: 100vw;
   height: auto;
   position: absolute;
   left: 0;
@@ -51,16 +50,16 @@ h5 {
   z-index: 2;
   display: none;
 }
-.logo{
+.logo {
   max-height: 15rem;
   cursor: pointer;
 }
-.navContent{
-   display: flex;
+.navContent {
+  display: flex;
   justify-content: center;
   align-items: flex-end;
   flex-direction: column;
-  font-family: 'Source Code Pro', monospace;   
+  font-family: "Source Code Pro", monospace;
   color: white;
   padding-right: 3rem;
   height: 100vh;
@@ -106,7 +105,7 @@ router-view {
 .pageSelector:hover::before {
   transform: scaleX(1);
 }
-.subtleHint{
+.subtleHint {
   color: white;
   opacity: 40%;
 }
@@ -123,105 +122,116 @@ router-view {
   align-items: flex-start;
   padding-left: 5rem;
 }
-.contentText{
+.contentText {
   margin-top: 2rem;
   width: 55vw;
 }
-.listItem img{
+.listItem img {
   max-height: 5rem;
   max-width: 5rem;
   margin-left: 5rem;
   margin-right: 5rem;
 }
-.listItem{
+.listItem {
   display: flex;
   flex-direction: row;
   margin-top: 2rem;
 }
-.skillList{
+.skillList {
   font-size: var(--h3);
   padding-left: 3rem;
   text-align: left;
   margin: 2rem;
 }
-.header{
+.header {
   margin-top: 3rem;
 }
-.gradDate{
+.gradDate {
   margin-top: 2rem;
   padding-left: 8.5rem;
 }
-.translated{
-    animation-name: translateUp;
-    animation-duration: 1.5s;
-    animation-fill-mode: forwards;  
-}
-.translateable{
+.translated {
   animation-name: translateUp;
   animation-duration: 1.5s;
   animation-fill-mode: forwards;
-  animation-direction: reverse;  
 }
-.alwaysonscreenholder{
+.translateable {
+  animation-name: translateUp;
+  animation-duration: 1.5s;
+  animation-fill-mode: forwards;
+  animation-direction: reverse;
+}
+.alwaysonscreenholder {
   display: flex;
   flex-direction: row;
   align-items: center;
 }
 @keyframes translateUp {
-  100% { opacity: 0%; display: none;}
+  100% {
+    opacity: 0%;
+    display: none;
+  }
 }
 @media only screen and (max-width: 930px) {
-  .navbar{
-    width: 100%; 
+  .navbar {
+    width: 100%;
     height: auto;
   }
-  .navContent{
+  .navContent {
     flex-direction: row;
     flex-wrap: wrap;
     padding-top: 5vh;
     height: auto;
   }
-  .pageSelector{
+  .pageSelector {
     margin-right: 3vw;
   }
-  .content{
+  .content {
     width: 100%;
     height: auto;
     margin-top: 30vh;
     overflow-y: auto;
   }
-  .home{
+  .home {
     padding-left: 0rem;
   }
-  .listItem{
+  .listItem {
     max-width: 60vw;
   }
-html,
-body,
-* {
-  font-size: 60%;
-}
-}
-@media only screen and (max-width: 730px) {
   html,
-body,
-* {
-  font-size: 45%;
-  font-weight: bolder;
+  body,
+  * {
+    font-size: 60%;
+  }
 }
-.navbar{
-  display: none;
+@media only screen and (max-width: 760px) {
+  html,
+  body,
+  * {
+    font-size: 45%;
+    font-weight: bolder;
+  }
+  .navbar {
+    display: none;
+  }
+  .closedNavbar {
+    display: inline;
+  }
+  .pageSelector {
+    padding: 2rem;
+  }
+  .content {
+    z-index: -1;
+    margin-top: 15rem;
+  }
+  .gradDate {
+    padding-left: 0rem;
+  }
+  .contentText {
+    width: 100vw;
+    text-align: center;
+  }
+  :root {
+    --h1: 4.754rem;
+  }
 }
-.closedNavbar{
-  display:inline;
-}
-.pageSelector{
-  padding: 2rem;
-}
-.content{
-  z-index: -1;
-  margin-top: 15rem;
-}
-.gradDate{
-  padding-left: 0rem;
-}}

@@ -6,7 +6,7 @@
         <span class="typed-text">{{ typeValue }}</span>
         <span class="cursor" :class="{'typing': typeStatus}">&nbsp;</span>
         </h1>
-        <h3 class="contentText">I am Staten Island Technical Highschool <br>student and prospective architect</h3>
+        <h2 class="contentText">I am Staten Island Technical Highschool <br>student and prospective architect</h2>
     </main>
 </template>
 <script>
@@ -88,5 +88,10 @@
     49%{ background-color: black; }
     50%{ background-color: transparent; }
     99%{ background-color: black; }
+}
+@media only screen and (max-width: 900px) {
+    .cursor{
+        display: none;
+    }
 }
 </style>
