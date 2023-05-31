@@ -145,6 +145,7 @@ router-view {
 }
 .header {
   margin-top: 3rem;
+  text-align: left;
 }
 .gradDate {
   margin-top: 2rem;

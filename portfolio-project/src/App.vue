@@ -15,6 +15,8 @@ import closedNavbar from './components/closedNavbar.vue'
 export default { components: {navbar, closedNavbar}}
 document.title = "Thomas Anderson Portfolio"
 </script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
 <style>
 @import url('./assets/base.css');
 </style>
